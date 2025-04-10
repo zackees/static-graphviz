@@ -38,8 +38,8 @@ LOCK_FILE = os.path.join(SELF_DIR, "lock.file")
 
 PLATFORM_ZIP_FILES = {
     "win32": "https://github.com/zackees/static-graphviz/raw/refs/heads/main/bins/windows_10_cmake_Release_Graphviz-12.2.1-win32.zip",
-    "darwin": "NOT VALID YET",
-    "linux": "http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2-3build2_amd64.deb",
+    # "darwin": "NOT VALID YET",  # HELP WANTED
+    # "linux": "http://archive.ubuntu.com/ubuntu/pool/universe/g/graphviz/graphviz_2.42.2-3build2_amd64.deb",  # Help wanted
 }
 
 
