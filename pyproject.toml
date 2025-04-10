@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "static-graphviz"
+description = "Cross platform ffmpeg to work on various systems."
+readme = "README.md"
+authors = [
+    {name = "Zach Vorhies", email = "dont@email.me"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.10.0"
+dependencies = [
+    "requests",
+    "filelock",
+    "progress",
+]
+version = "1.14"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.scripts]
+dot = "static_graphviz.cli:main_static_dot"
+static-dot = "static_graphviz.cli:main_static_dot"
+static-graphviz-paths = "static_graphviz.cli:main_print_paths"
